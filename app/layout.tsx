@@ -21,14 +21,18 @@ export default function RootLayout({
 		<html lang='en'>
 			<body
 				className={`${league_spartan.variable} bg-white bg-topMobile bg-no-repeat font-sans md:bg-topDesktop`}>
-				<img
-					src='/images/bg-pattern-bottom-desktop.svg'
-					className='absolute bottom-0 right-0 hidden md:top-36 md:block'
-				/>
-				<img
-					src='/images/bg-pattern-bottom-mobile.svg'
-					className='absolute bottom-0 right-0 top-72 block md:hidden'
-				/>
+				<div>
+					<img
+						src='/images/bg-pattern-bottom-desktop.svg'
+						alt='Bottom Pattern for Desktop'
+						className='absolute bottom-0 right-0 hidden md:top-36 md:block'
+					/>
+					<img
+						src='/images/bg-pattern-bottom-mobile.svg'
+						alt='Bottom Pattern for Mobile'
+						className='absolute bottom-0 right-0 top-72 block md:hidden'
+					/>
+				</div>
 				{children}
 			</body>
 		</html>
