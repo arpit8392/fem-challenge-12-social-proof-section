@@ -21,7 +21,7 @@ export default function RootLayout({
 		<html lang='en'>
 			<body
 				className={`${league_spartan.variable} bg-white bg-topMobile bg-no-repeat font-sans md:bg-topDesktop`}>
-				<div>
+				<div role='background'>
 					<img
 						src='/images/bg-pattern-bottom-desktop.svg'
 						alt='Bottom Pattern for Desktop'
