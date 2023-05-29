@@ -12,11 +12,13 @@ const styles: string[] = [
 
 const Testimonials = ({ testimonials }: Props) => {
 	return (
-		<div className='flex flex-col items-center space-x-0 space-y-4 md:flex-row md:space-x-8 md:space-y-0'>
+		<ul className='flex flex-col items-center space-x-0 space-y-4 md:flex-row md:space-x-8 md:space-y-0'>
 			{testimonials.map((item, i) => (
-				<TestimonialCard key={item.id} {...item} classes={styles[i]} />
+				<li key={item.id}>
+					<TestimonialCard {...item} classes={styles[i]} />
+				</li>
 			))}
-		</div>
+		</ul>
 	)
 }
 

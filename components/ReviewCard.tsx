@@ -6,7 +6,7 @@ type Props = {
 const ReviewCard = ({ stars, ratedBy, classes }: Props) => {
 	return (
 		<div
-			className={`flex flex-col items-center space-y-4 rounded-lg bg-lightGrayishMagenta py-4 md:w-[445px]  md:flex-row md:space-x-8 md:space-y-0 md:px-8 md:py-5  ${classes}`}>
+			className={`flex flex-col items-center space-y-4 rounded-lg bg-lightGrayishMagenta py-4 md:flex-row md:space-x-8 md:space-y-0 md:px-8 md:py-5  ${classes}`}>
 			<div className='flex flex-row space-x-2'>
 				{Array.from({ length: 5 }, (_, i) => (
 					<svg

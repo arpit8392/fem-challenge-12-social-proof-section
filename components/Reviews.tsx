@@ -12,16 +12,13 @@ const styles: string[] = [
 
 const Reviews = ({ reviews }: Props) => {
 	return (
-		<div className='flex flex-col space-y-4'>
+		<ul className='flex flex-col space-y-4'>
 			{reviews.map(({ id, stars, reviewedBy }, i) => (
-				<ReviewCard
-					key={id}
-					stars={stars}
-					ratedBy={reviewedBy}
-					classes={styles[i]}
-				/>
+				<li key={id}>
+					<ReviewCard stars={stars} ratedBy={reviewedBy} classes={styles[i]} />
+				</li>
 			))}
-		</div>
+		</ul>
 	)
 }
 export default Reviews

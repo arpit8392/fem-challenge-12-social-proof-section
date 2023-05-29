@@ -17,21 +17,22 @@ const TestimonialCard = ({
 	return (
 		<div
 			className={`flex flex-col space-y-6 rounded-lg bg-veryDarkMagenta px-8 py-11  text-white ${classes}`}>
-			<div className='flex flex-row items-center space-x-6'>
+			<figure className='flex flex-row items-center space-x-6'>
 				<img
 					src={`/images/${image}`}
-					alt={`${title}'s Image`}
+					alt={`${title}'s smiling picture for the testimony'`}
 					className='h-10 w-10 rounded-full'
 				/>
-				<div className='-space-y-1 text-lg'>
-					<h2 className='font-bold'>{title}</h2>
+				<figcaption className='-space-y-1 text-lg'>
+					<h3 className='font-bold'>{title}</h3>
 					{isVerifiedBuyer ? (
-						<h3 className=' text-softPink'>Verified Buyer</h3>
+						<p className=' text-softPink'>Verified Buyer</p>
 					) : (
-						<h3 className=' text-red-100'>Unverified Buyer</h3>
+						<p className=' text-red-100'>Unverified Buyer</p>
 					)}
-				</div>
-			</div>
+				</figcaption>
+			</figure>
+			<h2 className='sr-only text-lg font-medium tracking-normal'>{`“ ${testimonial} ”`}</h2>
 			<blockquote className='text-lg font-medium tracking-normal'>
 				{`“ ${testimonial} ”`}
 			</blockquote>
