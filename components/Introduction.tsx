@@ -1,6 +1,6 @@
-const Header = () => {
+const Introduction = () => {
 	return (
-		<header className='flex flex-col items-center space-y-4 text-center tracking-tight md:items-start md:text-left'>
+		<section className='flex flex-col items-center space-y-4 text-center tracking-tight md:items-start md:text-left'>
 			<h1 className='max-w-xs text-4xl/8 font-bold tracking-tighter text-veryDarkMagenta  md:max-w-sm md:text-6xl md:-tracking-[2px]'>
 				10,000+ of our users love our products.
 			</h1>
@@ -8,7 +8,7 @@ const Header = () => {
 				We only provide great products combined with excellent customer service.
 				See what our satisfied customers are saying about our services.
 			</p>
-		</header>
+		</section>
 	)
 }
-export default Header
+export default Introduction
