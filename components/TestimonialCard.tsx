@@ -24,7 +24,7 @@ const TestimonialCard = ({
 					className='h-10 w-10 rounded-full'
 				/>
 				<figcaption className='-space-y-1 text-lg'>
-					<h3 className='font-bold'>{title}</h3>
+					<h2 className='font-bold'>{title}</h2>
 					{isVerifiedBuyer ? (
 						<p className=' text-softPink'>Verified Buyer</p>
 					) : (
