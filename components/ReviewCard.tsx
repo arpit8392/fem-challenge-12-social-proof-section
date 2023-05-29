@@ -11,6 +11,8 @@ const ReviewCard = ({ stars, ratedBy, classes }: Props) => {
 				{Array.from({ length: 5 }, (_, i) => (
 					<svg
 						key={i}
+						aria-hidden={true}
+						focusable={false}
 						width='16'
 						height='16'
 						xmlns='http://www.w3.org/2000/svg'>
